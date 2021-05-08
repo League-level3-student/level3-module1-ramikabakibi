@@ -34,13 +34,19 @@ public class MurderOfCrows {
     private void hideTheDiamond() {
         int randomness = new Random().nextInt(theMurder.size());
         theMurder.get(randomness).getStomachContents().add("diamond");
+        //THE RANDOMNESS VARIABLE SORTS THROUGH EACH CROW AND RANDOMLY ASSIGNS ONE OF THEM
+        //WITH THE DIAMOND. theMurder is the array with all the crows
+        //BASICALLY YOU NEED TO GO THROUGH ALL THE CROWS IN THE theMurder array using a
+        //for loop and look in each crows stomach contents. If themurder.get(i).stomachContents
+        //.contains "diamond" then print theMurder.get(i)
+        //IDK If that's right, try it, but go through the class again to see what's going on
     }
 }
 
 class Crow {
     private String name;
     private ArrayList<String> stomachContents = new ArrayList<String>();
-
+//NOTE, EACH CROW HAS AN ARRAY OF STOMACH CONTENTS
     public Crow(String name) {
         this.name = name;
         fillCrowsStomach();
