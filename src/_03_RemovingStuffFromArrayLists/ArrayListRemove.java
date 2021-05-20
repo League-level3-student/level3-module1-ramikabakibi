@@ -12,6 +12,7 @@ public class ArrayListRemove {
         public Worm() {
             type = "worm";
         }
+        
     }
     
     class Dirt extends Stuff {
@@ -23,7 +24,12 @@ public class ArrayListRemove {
     // 1. Write a method that removes the dirt in the yard and returns the
     //    ArrayList
     public static ArrayList<Stuff> cleanOutTheYard( ArrayList<Stuff> yard ) {
-        
+        for(int i=0; i<yard.size(); i++) {
+        	if(yard.get(i).type=="dirt") {
+        		yard.remove(yard.get(i));
+        		i--;
+        	}
+        }
         return yard;
     }
     
@@ -31,6 +37,12 @@ public class ArrayListRemove {
     //    ArrayList and returns it
     public static ArrayList<Character> removeHashTags(ArrayList<Character> list) {
 
+    		for(int i=0; i<list.size(); i++) {
+    			if(list.get(i)=='#') {
+    				list.remove(list.get(i));
+    				i--;
+    			}
+    		}
         return list;
     }
 }
