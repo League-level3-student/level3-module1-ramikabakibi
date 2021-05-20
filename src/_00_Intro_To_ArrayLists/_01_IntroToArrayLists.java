@@ -14,28 +14,29 @@ public class _01_IntroToArrayLists {
     	strings.add("Hello");
     	strings.add("Wassup");
         // 3. Print all the Strings using a standard for-loop
-    	for(int i=0; i<strings.size(); i++) {
-    		System.out.println(""+strings.get(i));
-    	}
-        // 4. Print all the Strings using a for-each loop
-    	for(String s: strings) {
-    		System.out.println(""+s);
-    	}
-        // 5. Print only the even numbered elements in the list.
-    		for(int i=0; i<strings.size(); i++) {
-    			if(i%2==0) {
-    				System.out.println(""+strings.get(i));
-    			}
-    		}
-        // 6. Print all the Strings in reverse order.
-    		for(int i=strings.size()-1;i>=0; i--) {
-    			System.out.println(""+strings.get(i));
-    		}
+//    	for(int i=0; i<strings.size(); i++) {
+//    		System.out.println(""+strings.get(i));
+//    	}
+//        // 4. Print all the Strings using a for-each loop
+//    	for(String s: strings) {
+//    		System.out.println(""+s);
+//    	}
+//        // 5. Print only the even numbered elements in the list.
+//    		for(int i=0; i<strings.size(); i++) {
+//    			if(i%2==0) {
+//    				System.out.println(""+strings.get(i));
+//    			}
+//    		}
+//        // 6. Print all the Strings in reverse order.
+//    		for(int i=strings.size()-1;i>=0; i--) {
+//    			System.out.println(""+strings.get(i));
+//    		}
         // 7. Print only the Strings that have the letter 'e' in them.
     		for(int i=0; i<strings.size(); i++) {
-    			if(strings.get(i).
-    					//IDK HOW TO DO THIS, I NEED TO CHECK IF EACH STRING IN THE ARRAYLIST HAS AN E IN IT, I TRIED .CONTAINS AND OTHER METHODS BUT IT DIDN'T WORK
-    					//ASK TEACHER HOW TO CHECK IF A STRING HAS A LETTER IN IT
+    			if(strings.get(i).contains("e")){
+    				System.out.println(strings.get(i));
+    			}
+    					
     		}
     }
 }
